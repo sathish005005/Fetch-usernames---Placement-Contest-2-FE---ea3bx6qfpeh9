@@ -6,7 +6,7 @@ const App = () => {
  const [name,setname] = useState([]);
  const [id,setid] = useState(1);
  useEffect(()=>{
-  fetch('https://content.newtonschool.co/v1/pr/main/users/${id}')
+  fetch(`https://content.newtonschool.co/v1/pr/main/users/${id}`)
   .then(res=>res.json())
   .then(data=>{
     console.log(data);
